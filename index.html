@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>javascript simple stopwatch</title>
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto+Mono:wght@700&display=swap" rel="stylesheet">
+    <!-- FontAwesome CDN-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!--Stylesheet-->
+    <link href='styles.css' rel='stylesheet' />
+
+
+</head>
+<body>
+    <div class="container">
+        <div>
+            <div class="toggle-dark" >
+                <h4>Dark Theme</h4>
+                <input type="checkbox" id="toggle-dark" />
+                <label for="toggle-dark"></label>
+            </div>
+        </div>
+        <div class="wrapper">
+            <h1>S</h1>
+            <h2></h2>
+            <p><span id="seconds">00</span>:<span id="tens">00</span></p>
+            <div class="buttons">
+                <button id="button-start"><i class="fas fa-stopwatch"></i>Start</button>
+                <button id="button-stop"><i class="fas fa-play-circle"></i>Stop</button>
+                <button id="button-reset"><i class="fas fa-undo"></i>Reset</button>
+                <button id="button-lap" ><i class="fas fa-stopwatch"></i> Lap</button>
+            </div>
+        </div> 
+    </div>
+       <center><ul id="laps"></ul></center> 
+        
+    <script src="script.js"></script>
+</body>
+</html>
